@@ -9,7 +9,7 @@ import java.security.SecureRandom;
 public class Helper {
 
 
-    //метод буде генерувати випадкову строку
+    //метод буде генерувати випадкову строку. Рядок може складатися з цифр та будь-якої з 26 маленьких букв англійського алфавіту
     public static String generateRandomString(){
         SecureRandom secureRandom = new SecureRandom();
         return new BigInteger(1, secureRandom).toString(32);

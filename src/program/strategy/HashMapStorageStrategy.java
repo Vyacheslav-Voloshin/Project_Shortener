@@ -6,6 +6,7 @@ public class HashMapStorageStrategy implements StorageStrategy{
 
     //поле де зберігаються наші дані
     private HashMap<Long,String> data = new HashMap<>();
+
     @Override
     public boolean containsKey(Long key) {
         return data.containsKey(key);

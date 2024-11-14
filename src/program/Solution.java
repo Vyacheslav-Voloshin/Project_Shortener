@@ -1,6 +1,7 @@
 package program;
 
 import program.strategy.HashMapStorageStrategy;
+import program.strategy.OurHashMapStorageStrategy;
 import program.strategy.StorageStrategy;
 
 import java.util.Date;
@@ -82,7 +83,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        long elementsNumber = 10000;
+        long elementsNumber = 100000;
         testStrategy(new HashMapStorageStrategy(),elementsNumber);
+        testStrategy(new OurHashMapStorageStrategy(),elementsNumber);
     }
 }

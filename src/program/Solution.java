@@ -1,5 +1,6 @@
 package program;
 
+import program.strategy.FileStorageStrategy;
 import program.strategy.HashMapStorageStrategy;
 import program.strategy.OurHashMapStorageStrategy;
 import program.strategy.StorageStrategy;
@@ -83,8 +84,9 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        long elementsNumber = 100000;
+        long elementsNumber = 500;
         testStrategy(new HashMapStorageStrategy(),elementsNumber);
         testStrategy(new OurHashMapStorageStrategy(),elementsNumber);
+        testStrategy(new FileStorageStrategy(),elementsNumber);
     }
 }

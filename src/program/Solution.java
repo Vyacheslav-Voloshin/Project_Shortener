@@ -85,6 +85,8 @@ public class Solution {
 
         testStrategy(new HashMapStorageStrategy(), elementsNumber);
 
+        testStrategy(new HashBiMapStorageStrategy(),elementsNumber);
+
         testStrategy(new FileStorageStrategy(), elementsNumber);
 
         testStrategy(new OurHashBiMapStorageStrategy(), elementsNumber);
